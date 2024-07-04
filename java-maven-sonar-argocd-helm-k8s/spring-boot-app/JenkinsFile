@@ -1,5 +1,6 @@
 //DOCKER_MAVEN_IMAGE = 'maven:3.5.2-jdk-8-alpine'
-DOCKER_MAVEN_IMAGE = 'maven:3.8.6-eclipse-temurin-11-alpine'
+//DOCKER_MAVEN_IMAGE = 'maven:3.8.6-eclipse-temurin-11-alpine'
+DOCKER_MAVEN_IMAGE = 'maven:3.9.3-eclipse-temurin-17'
 DOCKER_MAVEN_ARGS = '-v $HOME/.m2:/root/.m2'
 pipeline {
   agent {
@@ -26,7 +27,7 @@ pipeline {
     }
     stage('Static Code Analysis') {
       environment {
-        SONAR_URL = "http://localhost:9000"
+        SONAR_URL = "http://192.168.2.11:9000"
       }
       steps {
         sh 'echo SONAR_AUTH_TOKEN : $SONAR_AUTH_TOKEN'

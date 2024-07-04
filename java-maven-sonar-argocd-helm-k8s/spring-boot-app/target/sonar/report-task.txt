@@ -1,6 +1,6 @@
 projectKey=com.louly-soft:spring-boot-demo
-serverUrl=http://localhost:9000
+serverUrl=http://127.0.0.1:9000
 serverVersion=10.6.0.92116
-dashboardUrl=http://localhost:9000/dashboard?id=com.louly-soft%3Aspring-boot-demo
-ceTaskId=8cd4c674-936a-438e-8c13-a2ec67a5071f
-ceTaskUrl=http://localhost:9000/api/ce/task?id=8cd4c674-936a-438e-8c13-a2ec67a5071f
+dashboardUrl=http://127.0.0.1:9000/dashboard?id=com.louly-soft%3Aspring-boot-demo
+ceTaskId=3b9e0997-2afc-4662-a093-28d82b6c70b7
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=3b9e0997-2afc-4662-a093-28d82b6c70b7
